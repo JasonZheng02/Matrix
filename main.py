@@ -22,9 +22,9 @@ add_edge(matrix, 70,125,0, 115,165,0 )
 add_edge(matrix, 93,105,0, 138,145,0 )
 add_edge(matrix, 80,200,0, 115,165,0 )
 add_edge(matrix, 173,110,0, 138,145,0 )
-add_edge(matrix, 80,200,0, 370,490,0 )
-add_edge(matrix, 173,110,0, 360,297,0 )
-add_edge(matrix, 370,490,0, 360,297,0 )
+add_edge(matrix, 80,200,0, 430,490,0 )
+add_edge(matrix, 173,110,0, 420,297,0 )
+add_edge(matrix, 430,490,0, 420,297,0 )
 
 
 draw_lines( matrix, screen, color )
