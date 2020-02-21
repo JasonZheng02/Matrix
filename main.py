@@ -3,7 +3,7 @@ from draw import *
 from matrix import *
 
 screen = new_screen()
-color = [ 0, 0, 0 ]
+color = [ 255, 255, 255 ]
 matrix = new_matrix(0,0)
 
 x = 0
