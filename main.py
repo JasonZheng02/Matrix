@@ -17,7 +17,7 @@ add_edge(matrix, 55,90,0, 20,120,0 )
 add_edge(matrix, 55,90,0, 90,120,0 )
 
 #sword
-add_edge(matrix, 70,125,0, 90,105,0 )
+add_edge(matrix, 70,125,0, 93,105,0 )
 
 draw_lines( matrix, screen, color )
 display(screen)
