@@ -12,10 +12,10 @@ while x < 4:
     add_edge(matrix, 10 + x,5,0, 55 + x,45,0 )
     add_edge(matrix, 85 + x,5,0, 55 + x,45,0 )
     add_edge(matrix, 55 + x,45,0, 55 + x,150,0 )
-    add_edge(matrix, 25 + x,150,0, 85 + x,150,0 )
+    add_edge(matrix, 25 + x,150 + x,0, 85 + x,150 + x,0 )
     add_edge(matrix, 25 + x,150,0, 25 + x,210,0 )
     add_edge(matrix, 85 + x,150,0, 85 + x,210,0 )
-    add_edge(matrix, 25 + x,210,0, 85 + x,210,0 )
+    add_edge(matrix, 25 + x,210 + x,0, 85 + x,210 + x,0 )
     add_edge(matrix, 55 + x,90,0, 20 + x,120,0 )
     add_edge(matrix, 55 + x,90,0, 90 + x,120,0 )
 
