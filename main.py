@@ -44,12 +44,12 @@ draw_lines( matrixB, screen, color )
 color = [ 255, 102, 0]
 x = 180
 y = 0
-z = 4.5
+z = 2.25
 while x < 270:
     add_edge(matrixO, x,200 - int(y),0, x,200 + int(y),0)
     x = x + 1
     y = y + z
-    z = z - 0.1
+    z = z - 0.05
 
 draw_lines( matrixO, screen, color )
 display(screen)
