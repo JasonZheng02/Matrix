@@ -37,5 +37,14 @@ while x < 245:
     add_edge(matrixB, x,325,0, x,340,0)
     x = x + 1
 
+#Blue
+color = [ 255, 102, 0]
+x = 180
+y = 0
+while x < 270:
+    add_edge(matrixB, x,200 - y,0, x,200 + y,0)
+    x = x + 1
+    y = y + 1
+
 draw_lines( matrixB, screen, color )
 display(screen)
