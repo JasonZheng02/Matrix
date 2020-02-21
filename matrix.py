@@ -12,8 +12,8 @@ import math
 #print the matrix such that it looks like
 #the template in the top comment
 def print_matrix( matrix ):
-    for r in range(0,4):
-        for c in range(0,4):
+    for r in range(len(matrix)):
+        for c in range(len(r)):
             print(matrix[r][c]),
         print("")
 
@@ -21,21 +21,19 @@ def print_matrix( matrix ):
 #turn the paramter matrix into an identity matrix
 #you may assume matrix is square
 def ident( matrix ):
-    for r in range(0,4):
-        for c in range(0,4):
+    for r in range(len(matrix)):
+        for c in range(len(matrix)):
             if c == r:
                 matrix[r][c] = 1
 
 #multiply m1 by m2, modifying m2 to be the product
 #m1 * m2 -> m2
 def matrix_mult( m1, m2 ):
-    product = new_matrix(4,4)
-    for r in range(0,4):
-        for c in range(0,4):
-            sum = 0
-            for i in range(0,4):
-                sum = sum + m1[r][i] * m2[i][c]
-            product[r][c] = sum
+    product = new_matrix(len(m1),len(m1[0]))
+    for r in range(len(m1)):
+        for c in range(len(m2[0])):
+            for i in range(len(m2)):
+                product[r][c] = product[r][c] + m1[r][i] * m2[i][c]
     return product
 
 def new_matrix(rows, cols):
