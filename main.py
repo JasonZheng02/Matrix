@@ -16,6 +16,8 @@ while x < 300:
     add_edge(matrix, x,100,0, x,300,0)
     x = x + 1
 
+draw_lines( matrix, screen, color )
+
 color = [ 255, 0, 0 ]
 x = 210
 while x < 220:
