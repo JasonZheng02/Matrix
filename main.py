@@ -17,15 +17,17 @@ add_edge(matrix, 55,90,0, 20,120,0 )
 add_edge(matrix, 55,90,0, 90,120,0 )
 
 #sword
-add_edge(matrix, 70,125,0, 93,105,0 )
-add_edge(matrix, 70,125,0, 115,165,0 )
-add_edge(matrix, 93,105,0, 138,145,0 )
-add_edge(matrix, 80,200,0, 115,165,0 )
-add_edge(matrix, 173,110,0, 138,145,0 )
-add_edge(matrix, 80,200,0, 430,490,0 )
-add_edge(matrix, 173,110,0, 420,297,0 )
-add_edge(matrix, 430,490,0, 420,297,0 )
-
+x = 0
+while x < 3:
+    add_edge(matrix, 70 + x,125,0, 93 + x,105,0 )
+    add_edge(matrix, 70 + x,125,0, 115 + x,165,0 )
+    add_edge(matrix, 93 + x,105,0, 138 + x,145,0 )
+    add_edge(matrix, 80 + x,200,0, 115 + x,165,0 )
+    add_edge(matrix, 173 + x,110,0, 138 + x,145,0 )
+    add_edge(matrix, 80 + x,200,0, 430 + x,490,0 )
+    add_edge(matrix, 173 + x,110,0, 420 + x,297,0 )
+    add_edge(matrix, 430 + x,490,0, 420 + x,297,0 )
+    x = x + 1
 
 draw_lines( matrix, screen, color )
 display(screen)
