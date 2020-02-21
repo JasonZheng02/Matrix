@@ -7,6 +7,7 @@ color = [ 255, 255, 0 ]
 matrixY = new_matrix(0,0)
 matrixR = new_matrix(0,0)
 matrixB = new_matrix(0,0)
+matrixO = new_matrix(0,0)
 
 #Yellow
 x = 200
@@ -37,16 +38,18 @@ while x < 245:
     add_edge(matrixB, x,325,0, x,340,0)
     x = x + 1
 
-#Blue
+draw_lines( matrixB, screen, color )
+
+#Orange
 color = [ 255, 102, 0]
 x = 180
 y = 0
-z = 3
+z = 4.5
 while x < 270:
     add_edge(matrixB, x,200 - int(y),0, x,200 + int(y),0)
     x = x + 1
     y = y + z
     z = z - 0.1
 
-draw_lines( matrixB, screen, color )
+draw_lines( matrixO, screen, color )
 display(screen)
