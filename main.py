@@ -33,7 +33,7 @@ draw_lines( matrixR, screen, color )
 #Blue
 color = [ 51, 171, 249]
 x = 230
-while x < 235:
+while x < 245:
     add_edge(matrixB, x,325,0, x,340,0)
     x = x + 1
 
