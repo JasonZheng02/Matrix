@@ -6,6 +6,7 @@ screen = new_screen()
 color = [ 255, 255, 0 ]
 matrixY = new_matrix(0,0)
 matrixR = new_matrix(0,0)
+matrixB = new_matrix(0,0)
 
 #Yellow
 x = 200
@@ -17,14 +18,24 @@ x = 150
 while x < 300:
     add_edge(matrixY, x,100,0, x,300,0)
     x = x + 1
+
 draw_lines( matrixY, screen, color )
 
 #Red
 color = [ 255, 0, 0 ]
 x = 210
 while x < 220:
-    add_edge(matrixR, x,340,0, x,350,0)
+    add_edge(matrixR, x,330,0, x,340,0)
     x = x + 1
 
 draw_lines( matrixR, screen, color )
+
+#Blue
+color = [ 51, 171, 249]
+x = 230
+while x < 235:
+    add_edge(matrixB, x,325,0, x,340,0)
+    x = x + 1
+
+draw_lines( matrixB, screen, color )
 display(screen)
