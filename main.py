@@ -43,7 +43,7 @@ x = 180
 y = 0
 z = 3
 while x < 270:
-    add_edge(matrixB, x,200 - y,0, x,200 + y,0)
+    add_edge(matrixB, x,200 - int(y),0, x,200 + int(y),0)
     x = x + 1
     y = y + z
     z = z - 0.1
