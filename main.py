@@ -5,7 +5,23 @@ from matrix import *
 screen = new_screen()
 color = [ 0, 0, 0 ]
 matrix = new_matrix(0,0)
+testMatrix = new_matrix(3,3)
+testMatrix2 = new_matrix(3,3)
 
+#testing matrix functions
+print("identity 3*3 matrix")
+print(ident(testMatrix))
+testMatrix2[0][0] = 2
+testMatrix2[1][1] = 2
+testMatrix2[2][2] = 2
+
+print(testMatrix2)
+print( "times" )
+print(testMatrix)
+print( "equals" )
+print(matrix_mult(testMatrix2, testMatrix))
+
+#drawing
 x = 0
 while x < 4:
     #stick figure
