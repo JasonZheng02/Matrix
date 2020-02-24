@@ -13,7 +13,7 @@ import math
 #the template in the top comment
 def print_matrix( matrix ):
     for r in range(len(matrix)):
-        for c in range(len(r)):
+        for c in range(len(matrix[0])):
             print(matrix[r][c]),
         print("")
 

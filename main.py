@@ -10,7 +10,8 @@ testMatrix2 = new_matrix(3,3)
 
 #testing matrix functions
 print("identity 3*3 matrix")
-print_matrix(ident(testMatrix))
+ident(testMatrix)
+print_matrix(testMatrix)
 testMatrix2[0][0] = 2
 testMatrix2[1][1] = 2
 testMatrix2[2][2] = 2
