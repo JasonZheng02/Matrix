@@ -16,6 +16,7 @@ testMatrix2[0][0] = 2
 testMatrix2[1][1] = 2
 testMatrix2[2][2] = 2
 
+print()
 print_matrix(testMatrix2)
 print( "times" )
 print_matrix(testMatrix)
