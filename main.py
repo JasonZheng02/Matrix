@@ -15,11 +15,11 @@ testMatrix2[0][0] = 2
 testMatrix2[1][1] = 2
 testMatrix2[2][2] = 2
 
-print(testMatrix2)
+print_matrix(testMatrix2)
 print( "times" )
-print(testMatrix)
+print_matrix(testMatrix)
 print( "equals" )
-print(matrix_mult(testMatrix2, testMatrix))
+print_matrix(matrix_mult(testMatrix2, testMatrix))
 
 #drawing
 x = 0
